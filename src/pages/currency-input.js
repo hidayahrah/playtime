@@ -12,7 +12,7 @@ export const font = Bungee({
   weight: "400",
 });
 
-export default function PokemonPage() {
+export default function CurrencyInputPage() {
   const [isCopied, setCopy] = useState(false);
   const [value, setValue] = useState();
   const [valueMasked, setValueMasked] = useState();

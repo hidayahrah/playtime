@@ -35,6 +35,12 @@ export default function Home() {
       logo: "/img/google.png",
       bgImg: "/img/noteBg.jpg",
     },
+    {
+      link: "/pull-request-comments",
+      targetLink: "_self",
+      name: "Pull Request Comments",
+      bgImg: "/img/github-photo.png",
+    },
   ];
 
   return (
