@@ -35,16 +35,17 @@ export default function PullRequestCommentsPage() {
   return (
     <>
       <div
-        className={`relative h-full md:px-40 pt-20 flex flex-col justify-between items-center bg-no-repeat bg-center bg-cover bg-[url('/img/github-photo.png')] ${font.className}`}
+        className={`relative h-full lg:px-40 px-5 flex flex-col justify-between items-center bg-no-repeat bg-center bg-cover bg-[url('/img/github-photo.png')] ${font.className}`}
       >
-        <div className="flex flex-col rounded-xl w-fit md:w-2/3">
+        <div className="h-fit p-2"></div>
+        <div className="flex flex-col rounded-xl w-full md:w-2/3">
           <div className="w-full flex flex-row items-center rounded-t-xl bg-white text-black font-semibold py-1 px-2">
             <div className="flex flex-row gap-2">
               <button className="p-2 rounded-full bg-[#ff635c]"></button>
               <button className="p-2 rounded-full bg-[#ffc030]"></button>
               <button className="p-2 rounded-full bg-[#28cd40]"></button>
             </div>
-            <p className="w-full flex justify-center text-lg">
+            <p className="w-full flex justify-center text-sm md:text-lg">
               Pull Request Comment
             </p>
           </div>
@@ -52,7 +53,7 @@ export default function PullRequestCommentsPage() {
             {comment}
             <div className="flex flex-row gap-2">
               <button
-                className="px-3 py-2 text-md rounded-2xl text-white bg-[#007aff] hover:bg-[#007aff]/80 drop-shadow-md"
+                className="px-3 py-2 text-md rounded-2xl text-white bg-[#007aff] hover:bg-[#007aff]/70 active:bg-[#007aff]/85 drop-shadow-md"
                 onClick={() => {
                   const randomNumber = Math.floor(
                     Math.random() * commentsOnPR?.length
